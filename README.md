@@ -26,11 +26,11 @@ Crearemos la primera función de *lambda AWS* y veremos su estructura
 Se crean las funciones con las características mas usadas de ES6 para repasar y ver su utilidad, y se demuestra cómo y por qué ya no es tan indispensable usar librerias externas que hace más pesado nuestro código.
 ### 2 yarn y babel (algo de git y npm)
 Iniciamos un proyecto con yarn 
-````
+```
 yarn init
 ```
 posteriormente agregamos los paquetes que usaremos por el momento, para este caso son los paquetes de babel porque transpileramos nuestro código a un código "legible" para todos los buscadores o los buscadores más viejos, aunque en nuestro caso será para NodeJS, que también depende de qué versión tengamos así mismo tendrá o no soporte para algún ECMA de JS.
-````
+```
 yarn add babel-cli babel-core babel-plugin-async-to-promises babel-plugin-transform-object-assign babel-preset-es2015 -D
 ```
 El _flag_ `-D` se refiere a que todos queden en *devDependencies* en nuestro package.json. En el caso de tener ya el archivo _package.json_ con todas las dependencias a utilizar, podemos instalarlas solo con
