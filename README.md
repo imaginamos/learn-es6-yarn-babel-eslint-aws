@@ -38,3 +38,7 @@ El _flag_ `-D` se refiere a que todos queden en *devDependencies* en nuestro pac
 yarn
 ```
 Por último añadimos el comando `babel src --watch --out-dir compiled` que nos servirá para hacer la transpilación de nuestros archivos en _src_
+
+## Tercera parte
+Se crea una clase que realizará todo el procesamiento de datos, se crea una función estática de esta, su constructor y las funciones anteriores que procesaban los datos quedan como prototipos de la clase creada.
+Además al correr el babel-cli se transpilan todos los archivos y se puede usar internamente _import_ en node, puesto que es transpilado

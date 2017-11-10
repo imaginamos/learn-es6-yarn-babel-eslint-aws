@@ -1,5 +1,5 @@
 function getStatistics() {
-  const getStatistics = require('../src/index').getStatistics
+  const getStatistics = require('../compiled/index').getStatistics
   const programers = require('../datos.json')
   const data = {
     programers: programers.data,
