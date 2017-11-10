@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "name": "Pepito Peres",
+      "skills": {
+        "php": ["wordpress"],
+        "js": ["jQuery"]
+      },
+      "age": 22,
+      "works": 4
+    },
+    {
+      "name": "Luis Peres",
+      "skills": {
+        "php": ["laravel", "wordpress", "codeigniter", "symfony"],
+        "js": ["react", "node"]
+      },
+      "age": 28,
+      "works": 19
+    },
+    {
+      "name": "Carlos Peres",
+      "skills": {
+        "php": ["laravel", "wordpress", "codeigniter"],
+        "js": ["angular"]
+      },
+      "age": 25,
+      "works": 10
+    },
+    {
+      "name": "Rigo Peres",
+      "skills": {
+        "php": ["laravel", "wordpress", "prestashop", "codeigniter", "symfony"],
+        "js": ["vue", "react", "angular", "trheejs"]
+      },
+      "age": 25,
+      "works": 24
+    },
+    {
+      "name": "José Peres",
+      "skills": {
+        "php": ["codeigniter"],
+        "js": []
+      },
+      "age": 25,
+      "works": 2
+    },
+    {
+      "name": "Juan Peres",
+      "skills": {
+        "php": ["laravel", "wordpress", "prestashop", "codeigniter", "symfony"],
+        "js": ["vue", "react", "angular"]
+      },
+      "age": 22,
+      "works": 2
+    }
+  ]
+}
