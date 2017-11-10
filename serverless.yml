@@ -1,0 +1,22 @@
+service: ApiTEST
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+  deploymentBucket: 
+    name: some-bucket-example
+  environment: 
+    GENERAL_VAR: 'Hola variable para todas las funciones'
+
+functions:
+  testTestTestTest:
+    handler: compiled/index.getStatistics
+    description: This function send message to client web to socket
+    events:
+      - http: 
+          path: test
+          method: post
+          cors: true
+    environment:
+      FUNCTION_VAR: 'Hola variable para esta funcion'

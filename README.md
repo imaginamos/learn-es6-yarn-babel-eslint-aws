@@ -50,3 +50,5 @@ yarn add eslint -D
 Agregamos eslint al script de npm y posteriormente iniciamos ESlint con `./node_modules/.bin/eslint --init`
 ## Quinta parte
 Añadiendo más características de ES6, spread, destructuring, etc
+## Sexta y última parte
+Añadiendo serverless para hacer el deploy a `AWS` de nuestro microservicio :sunglasses:
