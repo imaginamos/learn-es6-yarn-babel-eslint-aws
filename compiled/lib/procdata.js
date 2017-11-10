@@ -73,7 +73,7 @@ Procdata.prototype.groupBy = function groupBy(key) {
 };
 
 Procdata.prototype.getAllSkills = function getAllSkills() {
-  return this.data.reduce(function (before, current, array) {
+  return this.data.reduce(function (before, current) {
     Object.keys(current.skills).forEach(function (key) {
       before = before.concat(current.skills[key]);
     });

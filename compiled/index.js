@@ -6,8 +6,8 @@ var _procdata2 = _interopRequireDefault(_procdata);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function promiseFunction(data) {
-  return new Promise(function (resolve, reject) {
+function promiseFunction() {
+  return new Promise(function (resolve) {
     setTimeout(function () {
       resolve('Resuelta la tarea');
     }, 1000);

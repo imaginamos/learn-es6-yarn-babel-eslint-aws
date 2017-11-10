@@ -42,3 +42,9 @@ Por último añadimos el comando `babel src --watch --out-dir compiled` que nos 
 ## Tercera parte
 Se crea una clase que realizará todo el procesamiento de datos, se crea una función estática de esta, su constructor y las funciones anteriores que procesaban los datos quedan como prototipos de la clase creada.
 Además al correr el babel-cli se transpilan todos los archivos y se puede usar internamente _import_ en node, puesto que es transpilado
+## Cuarta parte
+Instalación y configuración de ESLint
+```
+yarn add eslint -D
+```
+Agregamos eslint al script de npm y posteriormente iniciamos ESlint con `./node_modules/.bin/eslint --init`

@@ -1,6 +1,7 @@
 import Procdata from './lib/procdata'
-function promiseFunction(data) {
-  return new Promise((resolve, reject) => {
+
+function promiseFunction() {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve('Resuelta la tarea')
     }, 1000)
