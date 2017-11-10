@@ -48,3 +48,5 @@ Instalación y configuración de ESLint
 yarn add eslint -D
 ```
 Agregamos eslint al script de npm y posteriormente iniciamos ESlint con `./node_modules/.bin/eslint --init`
+## Quinta parte
+Añadiendo más características de ES6, spread, destructuring, etc

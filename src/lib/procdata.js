@@ -1,6 +1,22 @@
 class Procdata {
-  constructor(data = require('../../datos.json').data) {
-    this.data = data 
+  constructor({ programers = require('../../datos.json').data, request }) {
+    this.data = programers
+    this.request = Object.keys(request)
+      .filter((key) => ['todosSabenSkill', 'frameworkJS', 'framework', 'groupBy'].indexOf(key) > -1)
+      .reduce((newObj, key) => Object.assign(newObj, { [key]: request[key] }), {})
+    this.processData()
+  }
+  processData() {
+    return {
+      edad: this.promedioEdad(),
+      todosSabenSkill: this.todosConocen(this.request.todosSabenSkill),
+      elMayordeEdad: this.mayor(),
+      frameworkJS: this.quienSabeJS(this.request.frameworkJS),
+      quienSabeDe: this.quienSabe(this.request.framework),
+      groupBy: this.groupBy(this.request.groupBy),
+      getAllSkills: this.getAllSkills(),
+      forEachSkilss: this.forEachSkilss()
+    }
   }
   static getData() {
     return this.data || ['Hola']

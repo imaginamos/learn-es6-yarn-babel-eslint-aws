@@ -22,19 +22,11 @@ function createResponse(statusCode, message) {
 module.exports.getStatistics = async (event, context, callback) => {
   try {
     let data = typeof event.body === 'string' ? JSON.parse(event.body) : event.body
-    let dataProcesada = new Procdata(data.programers)
+    let dataProcesada = new Procdata(data)
     let msg = await promiseFunction()
-    let response = {
-      msg,
-      edad: dataProcesada.promedioEdad(),
-      todosSabenSkill: dataProcesada.todosConocen(data.todosSabenSkill),
-      elMayordeEdad: dataProcesada.mayor(),
-      frameworkJS: dataProcesada.quienSabeJS(data.frameworkJS),
-      quienSabeDe: dataProcesada.quienSabe(data.framework),
-      groupBy: dataProcesada.groupBy(data.groupBy),
-      getAllSkills: dataProcesada.getAllSkills(),
-      forEachSkilss: dataProcesada.forEachSkilss()
-    }
+    let { edad, getAllSkills } = dataProcesada.processData()
+    let [firstSkill,,,, fourSkill] = getAllSkills
+    let response = { edad, msg, firstSkill, fourSkill }
     callback(null, createResponse(200, response))
   } catch (error) {
     console.log('Aquí hay un error', error)
