@@ -1,4 +1,4 @@
-# Ejemplo para el parendizaje
+# Mi primer microservicio con AWS
 Ejemplos para aprender ES6 (Su entorno de desarrollo, babel, eslint, yarn) y AWS (serverless)
 
 ## Estructura del directorio
